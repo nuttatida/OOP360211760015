@@ -1,5 +1,7 @@
 package lab5;
 
+import java.util.Scanner;
+
 public class myArray {
     public static void main(String[] args) {
 
@@ -11,7 +13,7 @@ public class myArray {
         Scanner sc = new Scanner(System.in);
         for (int i=0;i<a.length; i++){
             System.out.print("a["+i+"]: ");
-            a[i] = sc.nextlnt();
+            a[i] = sc.nextInt();
         }
 
         System.out.println("data in array : ");
