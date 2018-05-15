@@ -21,7 +21,7 @@ public  class Student {
     //design constructor
 
 
-    @Override
+    @Overide
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
