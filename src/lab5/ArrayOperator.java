@@ -7,49 +7,53 @@ import java.util.Scanner;
 //3. method to find average value in array
 //4. method to find maximum value in array
 //5. method to find minimum value in array
-public class arrayOperator {
+public class ArrayOperator {
     public static final int MAX = 10;
     public static void main(String[] args) {
         int myArray[] = new int[MAX];
         myArray = inputData(myArray);
         showData(myArray);
-        //find averge
+        //find average
         findAverage(myArray);
-        findMAX(myArray);
+        findMax(myArray);
         findMin(myArray);
 
 
+
     }  //main
-
     private static void findMin(int[] myArray) {
-        int min = myArray[0];
-        for (int i = 0;i < myArray.length;i++){
-            if (min>=myArray[i])
-                min =myArray[i];
-        }
-        System.out.println("The minimum value is "+min);
-    }
+                int min = myArray[0];
+                for (int i = 0; i < myArray.length; i++) {
+                       if (min>=myArray[i])
+                                min = myArray[i];
+                    }
+                System.out.println("The minimum value is "+min);
+            }
 
-    private static void findMAX(int[] myArray) {
+    private static void findMax(int[] myArray) {
         int max = myArray[0];
-        for (int i = 0; i < myArray.length; i++){
+        for (int i = 0; i < myArray.length; i++) {
             if (max<=myArray[i])
-                max =myArray[i];
+                max = myArray[i];
         }
         System.out.println("The maximum value is "+max);
     }
 
     private static void findAverage(int[] myArray) {
         int total = 0;
-        for (int val :myArray)
+        for (int val:myArray)
             total += val;
         System.out.println("The average value is "+(total/MAX));
     }
+
+
+
 
     private static void showData(int[] myArray) {
         System.out.println("Data in array: ");
         for (int val:myArray)
             System.out.print(val+"\t");
+        System.out.println();
     }
 
     private static int[] inputData(int[] myArray) {

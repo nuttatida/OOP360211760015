@@ -21,7 +21,6 @@ public  class Student {
     //design constructor
 
 
-    @Overide
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
