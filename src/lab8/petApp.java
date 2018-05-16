@@ -1,23 +1,19 @@
 package lab8;
 
-import lab9.Cow;
-
-public class PetApp {
+public class petApp {
     public static void main(String[] args) {
-        Dog dog =new Dog("mochi",3,"chihuahua");
-        System.out.println(dog.toString());
-        dog.makeNoise();
-        dog.myPet();
 
-        Cat cat = new Cat("Giant",2,"persian");
-        System.out.println(cat.toString());
-        cat.makeNoise();
-        cat.myPet();
+        Dog d1 = new Dog();
+        d1.setName("Safe");
+        d1.setAge(5);
 
-        Cow cow = new Cow("Namjai",5);
-        System.out.println(cow.toString());
-        cow.makeNoise();
-        cow.myPet();
+        System.out.println(d1.toString()+" "+d1.getClass().getSimpleName());
+
+
+
+
+
+
 
     }//main
 }//class
